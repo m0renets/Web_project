@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <nav class="menu">
+            <ul class="navigation">
+                <li><a href="index.html">Main</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="biography.html">Biography</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="contacts-banner">
+        <img src="public/images/contacts_hero.png" alt="">
+        <div class="text-overlay">
+            <h2>Experiences You Can Cherish</h2>
+        </div>
+    </div>
+
+    <div class="line"><hr></div>
+
+    <div class="contacts-conteiner">
+        <div class="contacts-info">
+            <div class="contacts-info">
+                <h3>Our contacts</h3>
+                <div class="undername-line"></div>
+                <a href="mailto:albert.genius.thebest@lll.kpi.ua"><p class="contacts-info-txt">albert.genius.thebest@lll.kpi.ua</p></a>
+                <a href="tel:+380502148800"><p class="contacts-info-txt">+38 (050) 21 48 800</p></a>
+            </div>
+            <div class="contacts-links">
+                <h3>Also search on social networks</h3>
+                <div class="undername-line"></div>
+                <div class="col links">
+                    <a href="#" class="icon-contacts" target="_blank"><img src="public/images/instagram_icon.svg" alt=""></a>
+                    <a href="#" class="icon-contacts" target="_blank"><img src="public/images/facebook_icon.svg" alt=""></a>
+                    <a href="#" class="icon-contacts" target="_blank"><img src="public/images/telegram_icon.svg" alt=""></a>
+                    <a href="#" class="icon-contacts" target="_blank"><img src="public/images/onlyfans_icon.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="feedback">
+            <h3>Contacts us</h3>
+            <div class="undername-line"></div>
+            <div id="form-main">
+                <div id="form-div">
+                  <form class="form" id="form1">
+                    <p class="name">
+                      <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="You name" id="name" />
+                    </p>
+                    <p class="email">
+                      <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="You email" />
+                    </p>
+                    <p class="text">
+                      <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Message"></textarea>
+                    </p>
+                    <div class="submit">
+                      <input type="submit" value="Send"/>
+                      <div class="ease"></div>
+                    </div>
+                  </form>
+                </div>
+        </div>
+    </div>
+
+</body>
+</html>

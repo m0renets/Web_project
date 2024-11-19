@@ -1,0 +1,75 @@
+body{
+    background-color: #2D2D2D;
+}
+
+.container nav{
+    position: relative;
+    display: flex;
+}
+
+.container nav::after{
+    content: "";
+    position: absolute;
+}
+
+.container nav label{
+    position: relative;
+    display: block;
+    cursor: pointer;
+}
+
+
+
+input[type='radio']{
+    display: none;
+}
+
+.container nav .slider{
+    position: absolute;
+}
+
+#individual:checked ~ section .content-1{
+    display: block;
+}
+
+#pair:checked ~ section .content-2{
+    display: block;
+}
+
+#family:checked ~ section .content-3{
+    display: block;
+}
+
+#corporate:checked ~ section .content-4{
+    display: block;
+}
+
+section .content{
+    display: none;
+}
+
+.shooting-info{
+    display: flex;
+    color: #fff;
+}
+
+.undername-line{
+    position: relative;
+    border-top: 1px solid #A8A062;
+}
+
+.reviews-section {
+    display: flex;
+}
+
+.biography-body{
+    display: flex   ;
+}
+
+.row{
+    display: flex;
+}
+
+.contacts-conteiner{
+    display: flex;
+}

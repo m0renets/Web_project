@@ -1,0 +1,15 @@
+{
+  "name": "course_project",
+  "version": "1.0.0",
+  "description": "for my love, Olezhka Boloban <3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Serhii@serhii.morenets@gnail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "@linthtml/linthtml": "^0.10.1",
+    "parcel": "^2.13.0"
+  }
+}
