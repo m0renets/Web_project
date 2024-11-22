@@ -50,6 +50,40 @@ body{
     }
 }
 
+footer {
+    display: flex;
+    justify-content: space-between; /* Вирівнює елементи зліва і справа */
+    align-items: center;
+    margin-inline: 40px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+
+    @media (max-width: 650px) {
+        display: block;
+        
+    }
+}
+
+.footer-links {
+    display: flex;
+    gap: 30px;
+    @media (max-width: 650px) {
+        margin-bottom: 30px;
+    }
+}
+.footer-contacts {
+    display: block;
+}
+
+.footer-contacts a {
+    text-decoration: none;
+}
+
+.contacts-txt {
+    font-family: 'MontserratRegular';
+    color: #E9D74E;
+}
+
 .logo {
     display: none;
     @media (max-width: 768px) {
@@ -275,17 +309,90 @@ section .content{
     display: flex   ;
 }
 
-.row__link{
-    
+.grid-layout{
     display: grid;
-    grid-template-columns: repeat(auto-fill, 250px);
+    grid-template-columns: repeat(4, 250px);
     gap: 50px;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 1250px) {
+        grid-template-columns: repeat(2, 250px);
+    }
+
+    @media (max-width: 650px) {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        
+    }
+    
 }
 
-.col__link {
-    width: 250px;
-    height: 250px;
-}
+.custom-link {
+    @media (max-width: 650px) {
+        width: calc(100% - 40px);
+        margin: 0 auto;
+    }
+  }
+  
+  .image-container {
+    position: relative;
+    width: 100%;
+    @media (max-width: 650px) {
+        overflow: hidden;
+    }
+  }
+  
+  .image-container img {
+    /* height: auto; */
+    display: block;
+    @media (max-width: 650px) {
+        width: 100%;
+        height: 100px;
+        object-fit: cover;
+    }
+  }
+  
+  .on-img-txt {
+    font-family: 'BacasimeAntique';
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    position: absolute;
+    bottom: 0;
+    height: 80px;
+    width: 100%;
+    left: 0;
+    background: rgba(105, 102, 87, 0.8);
+    color: white;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    @media (max-width: 650px) {
+        height: 100px;
+    }
+  }
+  
+  @media (max-width: 650px) {
+    .services-logo {
+        object-position: 0px -100px;
+    }
+
+    .reviews-logo {
+        object-position: 0px -50px;
+    }
+
+    .biography-logo {
+        object-position: 0px -120px;
+    }
+
+    .contacts-logo {
+        object-position: 0px -35px;
+    }
+  }
 
 .contacts-conteiner{
     display: flex;
@@ -388,4 +495,9 @@ section .content{
         font-size: 30px;
         line-height: 70px;
     }
+    
+}
+
+.menu__link.main {
+    color: #E9D74E;
 }
