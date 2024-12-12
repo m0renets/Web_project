@@ -28,26 +28,37 @@
         </div>
     </header>
 
-    <h2>Photography services you can enjoy</h2>
+    <h2 class="header-services-dektop">Photography services you can enjoy</h2>
+    <h2 class="header-services-mobile">Services</h2>
+
+    
 
     <div class="line"></div>
 
     <div class="container">
+
         <input type="radio" name="slider" id="individual" checked>
         <input type="radio" name="slider" id="pair">
         <input type="radio" name="slider" id="family">
         <input type="radio" name="slider" id="corporate">
         <nav class="services-nav">
-            <label for="individual" class="individual">Individual shooting</label>
-            <label for="pair" class="pair">Pair shooting</label>
-            <label for="family" class="family">Family shooting</label>
-            <label for="corporate" class="corporate">Corporate and event shooting</label>
+            <label for="individual" class="individual"><div class="radio_menu_text individual">Individual shooting</div></label>
+            <label for="pair" class="pair"><div class="radio_menu_text pair">Pair shooting</div></label>
+            <label for="family" class="family"><div class="radio_menu_text family">Family shooting</div></label>
+            <label for="corporate" class="corporate"><div class="radio_menu_text corporate">Corporate and event shooting</div></label>
             <div class="slider"></div>
         </nav>
         <section>
+
+            <button class="prev-btn"><img src="public/images/arrow_left.svg" alt=""></button>
+            <button class="next-btn"><img src="public/images/arrow_right.svg" alt=""></button>
+
             <div class="content content-1">
+                <div class="service-header">
+                    Individual shooting
+                </div>
                 <p class="price-txt">200$</p>
-                <div class="shooting-info">
+                <div class="shooting-info-desktop">
                     <div class="photo-price">
                         <img src="public/images/individual_shooting_photo.png" alt="">
                     </div>
@@ -58,11 +69,24 @@
                         <p class="info">Choosing this session means choosing an experience with a master photographer known for his ability to make every subject feel confident and radiant. Albert’s artistic vision and expert techniques ensure that each shot tells your story in the most captivating way, making it a perfect investment in yourself.</p>
                     </div>
                 </div>
+                <div class="shooting-info-mobile">
+                    <div class="photo-price">
+                        <img src="public/images/individual_shooting_photo_mobile.png" alt="">
+                    </div>
+                    <div class="info-price">
+                        <ul class="info-ul">
+                            <li>20 personal photos</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
 
             <div class="content content-2">
+                <div class="service-header">
+                    Pair shooting
+                </div>
                 <p class="price-txt">300$</p>
-                <div class="shooting-info">
+                <div class="shooting-info-desktop">
                     <div class="photo-price">
                         <img src="public/images/pair_shooting_photo.png" alt="">
                     </div>
@@ -73,11 +97,25 @@
                         <p class="info">Choosing this session ensures you’ll work with a photographer who excels at portraying emotions and relationships in a captivating, artistic way. Albert’s expertise brings out the best in both of you, delivering a collection of photos that reflect your unique story as a couple.</p>
                     </div>
                 </div>
+                <div class="shooting-info-mobile">
+                    <div class="photo-price">
+                        <img src="public/images/pair_shooting_photo_mobile.png" alt="">
+                    </div>
+                    <div class="info-price">
+                        <ul class="info-ul">
+                            <li>20 paired photos</li>
+                            <li>5 personal photos for each</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
 
             <div class="content content-3">
+                <div class="service-header">
+                    Family shooting
+                </div>
                 <p class="price-txt">400$</p>
-                <div class="shooting-info">
+                <div class="shooting-info-desktop">
                     <div class="photo-price">
                         <img src="public/images/famili_shooting_photo.png" alt="">
                     </div>
@@ -88,11 +126,25 @@
                         <p class="info">Choosing this session means working with a photographer renowned for his ability to make everyone, from the youngest to the oldest, feel comfortable and look their best. Albert’s skill in arranging group compositions guarantees that every photo tells a meaningful story, creating a cherished collection of family memories.</p>
                     </div>
                 </div>
+                <div class="shooting-info-mobile">
+                    <div class="photo-price">
+                        <img src="public/images/famili_shooting_photo_mobile.png" alt="">
+                    </div>
+                    <div class="info-price">
+                        <ul class="info-ul">
+                            <li>20 photos in groups</li>
+                            <li>2 personal photos for each</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
 
             <div class="content content-4">
+                <div class="service-header">
+                    Corporate and event shooting
+                </div>
                 <p class="price-txt">900$</p>
-                <div class="shooting-info">
+                <div class="shooting-info-desktop">
                     <div class="photo-price">
                         <img src="public/images/corporate_shooting_photo.png" alt="">
                     </div>
@@ -103,6 +155,17 @@
                         <p class="info">Choosing Nyudsov for your corporate event guarantees a polished, professional result that highlights your company’s brand and values. His experience in corporate photography and videography ensures that the final product will not only document the event but elevate its prestige, making a lasting impression on clients, employees, and stakeholders alike.</p>
                     </div>
                 </div>
+                <div class="shooting-info-mobile">
+                    <div class="photo-price">
+                        <img src="public/images/corporate_shooting_photo_mobile.png" alt="">
+                    </div>
+                    <div class="info-price">
+                        <ul class="info-ul">
+                            <li>Agreed number of photos</li>
+                            <li>Videography</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             
         </section>
@@ -111,18 +174,18 @@
     <div class="line"></div>
 
     <footer>
-        <div class="row">
-            <div class="col contacts">
+        <div class="footer-links">
+            <a href="#" class="icon" target="_blank"><img src="public/images/instagram_icon.svg" alt=""></a>
+            <a href="#" class="icon" target="_blank"><img src="public/images/facebook_icon.svg" alt=""></a>
+            <a href="#" class="icon" target="_blank"><img src="public/images/telegram_icon.svg" alt=""></a>
+            <a href="#" class="icon" target="_blank"><img src="public/images/onlyfans_icon.svg" alt=""></a>
+        </div>
+        <div class="footer-contacts">
+            <div class="contacts">
                 <a href="mailto:albert.genius.thebest@lll.kpi.ua"><p class="contacts-txt">albert.genius.thebest@lll.kpi.ua</p></a>
                 <a href="tel:+380502148800"><p class="contacts-txt">+38 (050) 21 48 800</p></a>
             </div>
-            <div class="col links">
-                <a href="#" class="icon" target="_blank"><img src="public/images/instagram_icon.svg" alt=""></a>
-                <a href="#" class="icon" target="_blank"><img src="public/images/facebook_icon.svg" alt=""></a>
-                <a href="#" class="icon" target="_blank"><img src="public/images/telegram_icon.svg" alt=""></a>
-                <a href="#" class="icon" target="_blank"><img src="public/images/onlyfans_icon.svg" alt=""></a>
-            </div>
-        </div>
+        </div>  
     </footer>
     <script src="script.js"></script>
 </body>
