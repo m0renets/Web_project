@@ -50,3 +50,6 @@ nextBtn.addEventListener('click', () => {
     currentSection = (currentSection + 1) % contentSections.length;
     showSection(currentSection);
 });
+
+
+// ------------------- Gallery -------------------

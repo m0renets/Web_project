@@ -1,0 +1,20 @@
+{
+  "albums": [
+    {
+      "id": 1,
+      "title": "Весільна фотографія",
+      "photos": [
+        {"id": 101, "url": "wedding1.jpg", "tags": ["весілля", "щастя"]},
+        {"id": 102, "url": "wedding2.jpg", "tags": ["весілля", "любов"]}
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Пейзажі",
+      "photos": [
+        {"id": 201, "url": "landscape1.jpg", "tags": ["природа", "ліс"]},
+        {"id": 202, "url": "landscape2.jpg", "tags": ["природа", "річка"]}
+      ]
+    }
+  ]
+}
